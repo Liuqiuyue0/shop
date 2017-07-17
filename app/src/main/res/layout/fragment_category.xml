@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <demo2.com.example.liuqiuyue.shop.widget.CtToolbar
+        android:id="@+id/constom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        custom:isShowSearchView="true"></demo2.com.example.liuqiuyue.shop.widget.CtToolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cat_recycleLef"
+            android:layout_width="@dimen/x100"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/cat_slider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x180"
+                custom:auto_cycle="true"
+                custom:indicator_visibility="visible"
+                custom:pager_animation="Accordion"
+                custom:pager_animation_span="1100" ></com.daimajia.slider.library.SliderLayout>
+
+
+            <com.cjj.MaterialRefreshLayout
+                android:id="@+id/cat_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                custom:overlay="false"
+                custom:wave_color="@color/material_green"
+                custom:wave_height_type="normal"
+                custom:wave_show="true">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cat_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </android.support.v7.widget.RecyclerView>
+            </com.cjj.MaterialRefreshLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

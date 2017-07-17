@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <demo2.com.example.liuqiuyue.shop.widget.CtToolbar
+        android:id="@+id/constom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:isShowSearchView="true">
+    </demo2.com.example.liuqiuyue.shop.widget.CtToolbar>
+
+    <com.cjj.MaterialRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hot_refresh"
+        app:overlay="false"
+        app:wave_show="true"
+        app:wave_color="@color/material_green"
+        app:wave_height_type="normal" >
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/hot_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.cjj.MaterialRefreshLayout>
+</LinearLayout>

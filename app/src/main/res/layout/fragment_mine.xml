@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="?attr/colorPrimary">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mine_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/default_head"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/mine_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="9dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/mine_my_orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_list_item"
+                android:drawableLeft="@drawable/icon_list_o"
+                android:drawablePadding="@dimen/x20"
+                android:gravity="center_vertical"
+                android:padding="@dimen/x16"
+
+                android:text="@string/dingdan"
+                android:textColor="@color/black" />
+
+            <View style="@style/line_vertical" />
+
+            <TextView
+                android:id="@+id/favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_list_item"
+                android:drawableLeft="@drawable/icon_favorite"
+                android:drawablePadding="@dimen/x20"
+                android:gravity="center_vertical"
+                android:padding="@dimen/x16"
+
+                android:text="@string/my_favorite"
+                android:textColor="@color/black" />
+
+            <View style="@style/line_vertical" />
+
+
+            <TextView
+                android:id="@+id/mine_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_list_item"
+                android:drawableLeft="@drawable/icon_location"
+
+                android:drawablePadding="@dimen/x20"
+                android:gravity="center_vertical"
+                android:padding="@dimen/x16"
+                android:text="@string/my_addresses"
+                android:textColor="@color/black" />
+
+            <View style="@style/line_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_list_item"
+                android:drawableLeft="@drawable/icon_msg"
+                android:drawablePadding="@dimen/x20"
+                android:gravity="center_vertical"
+                android:padding="@dimen/x16"
+
+                android:text="@string/my_msg"
+                android:textColor="@color/black" />
+
+
+            <Button
+                android:id="@+id/mine_logout"
+                style="@style/bigRedButton"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_marginLeft="@dimen/x150"
+                android:layout_marginRight="@dimen/x150"
+                android:layout_marginTop="@dimen/x20"
+                android:text="@string/logout"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

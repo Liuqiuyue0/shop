@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:padding="@dimen/x5"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="@dimen/x150"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:id="@+id/cat_drawee_view"
+        android:layout_alignParentLeft="true"
+        app:viewAspectRatio="1"
+
+        >
+
+    </com.facebook.drawee.view.SimpleDraweeView>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/cat_drawee_view">
+
+        <TextView
+            android:id="@+id/cat_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:maxLines="3"
+
+            />
+
+        <TextView
+            android:id="@+id/cat_text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/firebrick"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cat_button"
+            style="@style/bigRedButton"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="立即购买"
+            android:textSize="15sp"
+            android:layout_gravity="right|bottom"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

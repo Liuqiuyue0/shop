@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <demo2.com.example.liuqiuyue.shop.widget.CtToolbar
+        android:id="@+id/constom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        custom:isShowSearchView="true">
+
+    </demo2.com.example.liuqiuyue.shop.widget.CtToolbar>
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x150">
+
+    </com.daimajia.slider.library.SliderLayout>
+
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        custom:selected_color="#FF5500"
+        custom:selected_height="3dp"
+        custom:selected_padding_left="2dp"
+        custom:selected_padding_right="2dp"
+        custom:selected_width="16dp"
+        custom:shape="rect"
+        custom:unselected_color="#55333333"
+        custom:unselected_height="3dp"
+        custom:unselected_padding_left="2dp"
+        custom:unselected_padding_right="2dp"
+        custom:unselected_width="16dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

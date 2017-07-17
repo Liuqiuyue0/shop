@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <demo2.com.example.liuqiuyue.shop.widget.CtToolbar
+        android:id="@+id/login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:isShowSearchView="false"
+        app:navigationIcon="@drawable/icon_back_32px"
+        app:title="登录">
+
+    </demo2.com.example.liuqiuyue.shop.widget.CtToolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_view_block"
+        android:orientation="vertical"
+        android:padding="@dimen/largePadding">
+
+        <demo2.com.example.liuqiuyue.shop.widget.ClearEditText
+            android:id="@+id/login_user"
+            style="@style/editText_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_telphone_32"
+            android:hint="@string/user"
+            android:inputType="phone"
+            android:paddingBottom="20dp" />
+
+        <View
+            style="@style/line_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"></View>
+
+        <demo2.com.example.liuqiuyue.shop.widget.ClearEditText
+            android:id="@+id/login_pass"
+            style="@style/editText_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_lock"
+            android:hint="@string/passWord"
+            android:inputType="textPassword"
+            android:paddingBottom="20dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_bt"
+        style="@style/bigRedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/login" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/largePadding">
+
+        <TextView
+            android:id="@+id/login_toReg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reg"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+
+            />
+
+        <TextView
+            android:id="@+id/login_missPass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/missPass"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
